@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Helvitica", sans-serif;
+  src: url("./../fonts/helvetica.woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvitica-Bold", sans-serif;
+  src: url("./../fonts/helvetica-bold.woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
 html{
   box-sizing: border-box;
 }
@@ -19,4 +33,12 @@ li{
 
 img{
   max-width: 100%;
+}
+
+body {
+  font-family: "Helvitica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5C5C5E;
 }
