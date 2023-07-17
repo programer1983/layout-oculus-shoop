@@ -82,6 +82,10 @@ body {
   gap: 0 20px;
 }
 
+.menu__link:hover {
+  text-decoration: underline;
+}
+
 .logo {
   justify-self: center;
 }
@@ -156,11 +160,21 @@ body {
   color: #F6F4F5;
   padding: 20px 110px;
   text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.buy-btn__text:hover {
+  background: rgba(80, 0, 250, 0.93);
 }
 
 .buy-btn__price {
   background-color: #F6F4F5;
   padding: 20px 105px;
+  transition: all 0.5s ease;
+}
+
+.buy-btn__price:hover {
+  background: #e2d6d6;
 }
 
 /* ======== FEATURED ====================================================== */
@@ -202,6 +216,10 @@ body {
 .tabs__btn-item {
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.tabs__btn-item:hover {
+  text-decoration: underline;
 }
 
 .tabs__btn-item--active {
@@ -315,7 +333,11 @@ body {
   -webkit-text-fill-color: transparent;
   border: 1px solid;
   border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+  transition: all 0.5s ease;
+}
 
+.game__link:hover {
+  transform: scale(1.05);
 }
 
 .game__item {
@@ -340,6 +362,7 @@ body {
 .game__item-text {
   margin-bottom: 40px;
 }
+
 .game__item-link {
   margin-top: auto;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
@@ -533,12 +556,17 @@ body {
   border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
   padding: 6px;
   font-weight: 700;
-  background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   width: 100%;
+  transition: all 0.5s ease;
+}
+
+.accessories__item-btn:hover {
+  transform: scale(1.05);
 }
 
 
@@ -620,4 +648,38 @@ body {
   display: flex;
   column-gap: 20px;
   justify-self: end;
+}
+
+/* ======= MEDIA TOP ================================================================================ */ 
+
+
+@media (max-width: 768px){
+  .title {
+    font-size: 66px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 568px){
+  .top {
+    text-align: center;
+  }
+
+  .buy-btn {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 420px){
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
 }
